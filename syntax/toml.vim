@@ -7,6 +7,8 @@ if exists("b:current_syntax")
   finish
 endif
 
+syn sync fromstart
+
 syn match tomlEscape /\\[btnfr"/\\]/ display contained
 syn match tomlEscape /\\u\x\{4}/ contained
 syn match tomlEscape /\\U\x\{8}/ contained
